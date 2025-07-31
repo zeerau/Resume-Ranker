@@ -1,6 +1,6 @@
 import streamlit as st
 from sentence_transformers import SentenceTransformer, util
-import PyPDF2
+import pypdf
 import torch
 
 # Load the model once
