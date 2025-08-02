@@ -34,6 +34,15 @@ def get_feedback(score):
 st.set_page_config(page_title="Resume Screener", layout="centered")
 st.title("🧠 Smart Resume Screener")
 
+# Add project overview
+st.markdown("""
+## 📝 Overview
+
+This app helps you evaluate how well your resume matches a job description using advanced semantic analysis. 
+Upload your resume (PDF) and paste the job description to receive a match score and actionable feedback. 
+The app uses a state-of-the-art language model to understand context and meaning, not just keywords.
+""")
+
 st.markdown("Upload your **resume** and paste the **job description** to see how well they match semantically.")
 
 job_description = st.text_area("📄 Paste Job Description Here", height=250)
